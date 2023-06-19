@@ -1,0 +1,106 @@
+[options]
+library = "Libosinfo"
+version = "1.0"
+min_cfg_version = "1.0"
+target_path = "."
+girs_directories = ["../gir-files", ".."]
+work_mode = "normal"
+single_version_file = true
+generate_safety_asserts = true
+deprecate_by_min_version = true
+use_gi_docgen = true
+generate_builder = true
+trust_return_value_nullability = true
+
+generate = [
+    # Enums
+    "Libosinfo.DeviceDriverSigningReq",
+    "Libosinfo.InstallConfigParamPolicy",
+    "Libosinfo.MediaError",
+    "Libosinfo.PathFormat",
+    "Libosinfo.ProductRelationship",
+    "Libosinfo.ReleaseStatus",
+
+    # Flags
+    "Libosinfo.InstallScriptInjectionMethod",
+
+    # Classes
+    "Libosinfo.AvatarFormat",
+    "Libosinfo.Datamap",
+    "Libosinfo.DatamapList",
+    "Libosinfo.Db",
+    "Libosinfo.Deployment",
+    "Libosinfo.DeploymentList",
+    "Libosinfo.Device",
+    "Libosinfo.DeviceDriver",
+    "Libosinfo.DeviceDriverList",
+    "Libosinfo.DeviceLink",
+    "Libosinfo.DeviceLinkFilter",
+    "Libosinfo.DeviceLinkList",
+    "Libosinfo.DeviceList",
+    "Libosinfo.Filter",
+    "Libosinfo.InstallConfig",
+    "Libosinfo.InstallConfigParam",
+    "Libosinfo.InstallConfigParamList",
+    "Libosinfo.InstallScriptList",
+    "Libosinfo.Loader",
+    "Libosinfo.MediaList",
+    "Libosinfo.OsList",
+    "Libosinfo.OsVariant",
+    "Libosinfo.OsVariantList",
+    "Libosinfo.Platform",
+    "Libosinfo.PlatformList",
+    "Libosinfo.ProductFilter",
+    "Libosinfo.ProductList",
+    "Libosinfo.Resources",
+    "Libosinfo.ResourcesList",
+    "Libosinfo.Tree",
+    "Libosinfo.TreeList",
+    "Libosinfo.InstallScript",
+    "Libosinfo.Os",
+    "Libosinfo.Error",
+    "Libosinfo.Firmware",
+    "Libosinfo.FirmwareList",
+    "Libosinfo.Image",
+    "Libosinfo.ImageList",
+    "Libosinfo.InstallScriptInstallationSource",
+    "Libosinfo.Product",
+    "Libosinfo.Entity",
+    "Libosinfo.List",
+    "Libosinfo.MediaDetectFlags",
+    "Libosinfo.TreeError",
+]
+
+manual = [
+    "GObject.Object",
+    "GObject.Value",
+    "GLib.Error",
+    "GLib.Date",
+    "GLib.Quark",
+    "GLib.Priority",
+    "Gio.AsyncResult",
+    "Gio.AsyncReadyCallback",
+    "Gio.Cancellable",
+    "Gio.File",
+]
+
+builders = [
+    "Libosinfo.DeploymentBuilder",
+    "Libosinfo.InstallScriptBuilder",
+    "Libosinfo.MediaBuilder",
+    "Libosinfo.TreeBuilder",
+    "Libosinfo.DeviceLinkBuilder",
+    "Libosinfo.DeviceLinkFilterBuilder",
+    "Libosinfo.FirmwareBuilder",
+    "Libosinfo.ImageBuilder",
+    "Libosinfo.InstallConfigParamBuilder",
+    "Libosinfo.ResourcesBuilder",
+    "Libosinfo.OsVariantBuilder",
+]
+
+[[object]]
+name = "Libosinfo.Media"
+status = "generate"
+    [[object.function]]
+    name = "create_from_location_with_flags_async"
+    no_future = true

@@ -1,4 +1,2 @@
-api/Cargo.lock
-api/target
-sys/Cargo.lock
-sys/target
+target
+Cargo.lock
